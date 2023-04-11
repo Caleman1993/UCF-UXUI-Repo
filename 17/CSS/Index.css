@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Helvetica Neue';
+    color: #222B36;
+    background: linear-gradient(#F9F9FA, #5875EE);
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #222B36;
+}
+
+.inner_header{
+    width: 75%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation{
+    font-weight: regular;
+    letter-spacing: 2pt;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.navigation a{
+    color: white;
+    transition: 0.4s;
+}
+
+.navigation a:hover{   
+    border-bottom: 5px solid #97EEA8;
+}
+
+.navigation span{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: x-large;
+    letter-spacing: 2pt;
+}
+
+.hero_section{
+    margin-top: 75px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ellipse{
+    width: 505px;
+    height: 505px;
+    border-radius: 50%;
+    background-color: #222B36;
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.50);  
+}
+
+.hero_items{
+    margin-left: 125px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ChesterAleman{
+    font-size: 48px;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 2pt;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;  
+    }
+
+.HeroHeading{
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.HeroBio{
+    width: 409px;
+    font-weight: light;
+    font-size: 20px;
+    line-height: 22pt;
+    margin-top: 40px;
+    margin-bottom: 40px;  
+}
+
+.button{
+    width: 172px;
+    height: 64px;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: #222B36;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.25);
+    transition: 0.1s;
+}
+
+.button:hover{
+    transition: 1 ease;
+    transform: scale(103%);
+    background: #5875EE;
+}
+
+.arrowContainer{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.ViewCaseStudies{
+    font-size: 20px;
+    font-style: italic;
+    color: #222B36;
+    letter-spacing: 2pt;
+    justify-content: center;
+}
+
+.arrow{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow div{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-top: 5px solid #222B36;
+    border-left: 5px solid #222B36;
+    transform: rotate(225deg);
+}
+
+.arrowContainer:hover{
+    transition: 1 ease;
+    transform: translate(0%, 10%);
+}
+
+.casestudies{
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.study1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 1240px;
+    height: 500px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-color: #222B36;
+    
+}
+
+.study1textbox{
+    width: 353px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.casestudyname{
+    font-weight: bold;
+    color: #F9F9FA;
+    font-size: 32px;
+}
+
+.casestudydescription{
+    font-weight: light;
+    font-size: 20px;
+    line-height: 22pt;
+    margin-top: 40px;
+    color: #F9F9FA;
+}
+
+.casebutton{
+    width: 240px;
+    height: 64px;
+    margin-top: 40px;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: #5875EE;
+    border: none;
+    border-radius: 9px;
+    transition: 0.1s;
+}
+
+.casebutton:hover{
+    transition: 1 ease;
+    transform: scale(103%);
+    background: #97EEA8;
+}
+
+.study2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 1240px;
+    height: 500px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-color: #222B36;
+    
+}
+
+.study2textbox{
+    width: 353px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.study3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 1240px;
+    height: 500px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-color: #222B36;
+    
+}
+
+.study3textbox{
+    width: 353px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.aboutme_section{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media all and (max-width:800px){
+    .aboutme_section{
+        flex-direction: column;
+    }
+}
+
+.footerellipse{
+    width: 505px;
+    height: 505px;
+    border-radius: 50%;
+    background-color: #222B36;
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.50);  
+}
+
+.bottomitems{
+    margin-left: 125px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.aboutme{
+    font-weight: bold;
+    color: #F9F9FA;
+    font-size: 32px;
+    }
+
+.BottomBio{
+    width: 400px;
+    font-weight: light;
+    font-size: 20px;
+    line-height: 22pt;
+    color: #F9F9FA;
+    margin-top: 40px;
+    margin-bottom: 40px;  
+}
+
+.bottombutton{
+    width: 172px;
+    height: 64px;
+    margin-right: 20px;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: #222B36;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.25);
+    transition: 0.1s;
+}
+
+.bottombutton:hover{
+    transition: 1 ease;
+    transform: scale(103%);
+    background: #97EEA8;
+}
+
+.footer_section{
+    height: 400px;
+    background: #222B36;
+}

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.myGridContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "title content sidebar"
+      ;
+  }
+
+  .containerTitle {
+    grid-area: title;
+  }
+  .containerSidebar {
+    grid-area: sidebar;
+  }
+  .containerContent {
+    grid-area: content;
+  }
+  /* .containerFooter {
+    grid-area: footer;
+  } */
+
+
+
+
+  .myGridContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .containerTitle{
+    background-color: aquamarine;
+  }
+  .containerSidebar{
+    background-color: rgb(255, 234, 127);
+  }
+  .containerContent{
+    background-color: rgb(255, 127, 127);
+  }
+  .containerFooter{
+    background-color: rgb(142, 127, 255);
+  }

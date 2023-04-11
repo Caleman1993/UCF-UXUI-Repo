@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.box1{
+    width: 40%;
+    height: 400px;
+    background-color: rgb(112, 0, 132);
+    display: inline-block;
+}
+.box2{
+    width: 40%;
+    height: 400px;
+    background-color: blue;
+    display: inline-block;
+}
+
+@media all and (max-width: 900px) {
+    .box1{
+        background-color: rgb(29, 134, 0);
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 200px;
+    }
+    .box2{
+        background-color: rgb(117, 33, 0);
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 200px;
+    }
+}
+@media all and (max-width: 700px) {
+    .box1{
+        background-color: rgb(134, 0, 0);
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+    .box2{
+        background-color: rgb(113, 117, 0);
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+}
