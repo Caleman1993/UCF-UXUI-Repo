@@ -35,15 +35,18 @@ body{
 }
 
 .navigation a{
-    color: white;
-    transition: 0.4s;
+    color: #F9F9FA;
+    transition: 0.2s;
+    padding-bottom: 10px;
 }
 
 .navigation a:hover{   
     border-bottom: 5px solid #97EEA8;
+    border-radius: 33%;
 }
 
-.navigation span{
+h1{
+    color: #F9F9FA;
     font-weight: lighter;
     font-style: italic;
     font-size: x-large;
@@ -105,7 +108,7 @@ body{
     font-family: 'Helvetica Neue';
     font-weight: bold;
     font-size: 20px;
-    color: white;
+    color: #F9F9FA;
     background: #222B36;
     border: none;
     border-radius: 9px;
@@ -131,6 +134,7 @@ body{
 .ViewCaseStudies{
     font-size: 20px;
     font-style: italic;
+    text-align: center;
     color: #222B36;
     letter-spacing: 2pt;
     justify-content: center;
@@ -163,28 +167,6 @@ body{
     margin-top: 75px;
     flex-direction: column;
     align-items: center;
-}
-
-.study1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 1240px;
-    height: 500px;
-    margin-bottom: 100px;
-    border-radius: 20px;
-    background-color: #222B36;
-    
-}
-
-.study1textbox{
-    width: 353px;
-    margin-left: 105px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
 }
 
 .casestudyname{
@@ -221,17 +203,55 @@ body{
     background: #97EEA8;
 }
 
-.study2{
+.study1{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
     width: 1240px;
     height: 500px;
     margin-bottom: 100px;
     border-radius: 20px;
     background-color: #222B36;
-    
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.25);
+    transition: 0.2s;
+}
+
+.study1textbox{
+    width: 353px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.study1images{
+    width: 300px;
+    height: 300px;
+    margin-left: 15%;
+    border-radius: 50%;
+    background: #97EEA8;
+}
+
+.study1:hover{
+    transition: 1 ease;
+    transform: scale(103%);
+    box-shadow: 0 0 50px 0 rgb(151, 238, 168);
+}
+
+.study2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 1240px;
+    height: 500px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-color: #222B36;
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.25);
+    transition: 0.2s;
 }
 
 .study2textbox{
@@ -243,26 +263,55 @@ body{
     align-items: left;
 }
 
+.study2images{
+    width: 300px;
+    height: 300px;
+    margin-left: 15%;
+    border-radius: 50%;
+    background: #97EEA8;
+}
+
+.study2:hover{
+    transition: 1 ease;
+    transform: scale(103%);
+    box-shadow: 0 0 50px 0 rgb(151, 238, 168);
+}
+
 .study3{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
     width: 1240px;
     height: 500px;
     margin-bottom: 100px;
     border-radius: 20px;
     background-color: #222B36;
-    
+    box-shadow: 0 0 32px 0 rgba(34,43,54,.25);
+    transition: 0.2s;
 }
 
 .study3textbox{
     width: 353px;
-    margin-left: 105px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    margin-left: 105px;
+}
+
+.study3images{
+    width: 300px;
+    height: 300px;
+    margin-left: 15%;
+    border-radius: 50%;
+    background: #97EEA8;
+}
+
+.study3:hover{
+    transition: 1 ease;
+    transform: scale(103%);
+    box-shadow: 0 0 50px 0 rgb(151, 238, 168);
 }
 
 .aboutme_section{
@@ -272,15 +321,9 @@ body{
     align-items: flex-start;
 }
 
-@media all and (max-width:800px){
-    .aboutme_section{
-        flex-direction: column;
-    }
-}
-
 .footerellipse{
-    width: 505px;
-    height: 505px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     background-color: #222B36;
     box-shadow: 0 0 32px 0 rgba(34,43,54,.50);  
@@ -288,7 +331,7 @@ body{
 
 .bottomitems{
     margin-left: 125px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -298,8 +341,8 @@ body{
     font-size: 32px;
     }
 
-.BottomBio{
-    width: 400px;
+.bottombio{
+    width: 700px;
     font-weight: light;
     font-size: 20px;
     line-height: 22pt;
@@ -332,4 +375,142 @@ body{
 .footer_section{
     height: 400px;
     background: #222B36;
+}
+
+@media all and (max-width:1420px){
+
+    .hero_section{
+        margin-top: 75px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ellipse{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #222B36;
+        box-shadow: 0 0 32px 0 rgba(34,43,54,.50);  
+    }
+    
+    .hero_items{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .study1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 750px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        background-color: #222B36;
+    }
+
+    .study1textbox{
+        width: 353px;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .study1images{
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        border-radius: 50%;
+        background: #97EEA8;
+    }
+
+
+    .study2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 750px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        background-color: #222B36;
+    }
+
+    .study2textbox{
+        width: 353px;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .study2images{
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        border-radius: 50%;
+        background: #97EEA8;
+    }
+
+    .study3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 750px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        background-color: #222B36;
+    }
+
+    .study3textbox{
+        width: 353px;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .study3images{
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        border-radius: 50%;
+        background: #97EEA8;
+    }
+
+    .aboutme_section{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerellipse{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .bottomitems{
+        margin-left: 0px;
+        text-align: center;
+    }
+
 }
